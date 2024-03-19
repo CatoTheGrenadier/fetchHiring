@@ -11,7 +11,7 @@ import SwiftUI
 struct fetchHiringApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MasterView()
         }
     }
 }
