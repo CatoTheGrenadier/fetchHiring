@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MasterView: View {
+struct MasterView: View { // This is the main view
     @ObservedObject var hiringData = HiringDataList()
     var body: some View {
         List{
