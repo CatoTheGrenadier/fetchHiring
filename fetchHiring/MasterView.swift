@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MasterView: View {
-    @State var hiringData = HiringDataList()
+    @ObservedObject var hiringData = HiringDataList()
     var body: some View {
         List{
             ForEach(hiringData.resultList, id:\.id){ singleData in

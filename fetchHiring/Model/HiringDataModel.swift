@@ -7,8 +7,8 @@
 
 import Foundation
 
-class HiringDataList: Identifiable, Decodable{
-    var resultList: [SingleHiringData] = []
+class HiringDataList:ObservableObject, Identifiable{
+    @Published var resultList: [SingleHiringData] = []
     
     init(){
         downloadHiringData{ results in
